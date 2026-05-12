@@ -70,3 +70,11 @@ services:
 <img width="1117" height="621" alt="image" src="https://github.com/user-attachments/assets/bb44359c-9ec0-40cd-8e44-bcbfef5ee620" />
 
 ## Kiểm tra các dịch vụ:
+### Dịch vụ PhpMyAdmin 192.168.183.129:8081
+
+<img width="1916" height="1040" alt="image" src="https://github.com/user-attachments/assets/609fea7c-b052-4e6f-abeb-6ea7408a8050" />
+
+### Dịch vụ Wordpress 192.168.183.129:8080
+
+<img width="1916" height="1041" alt="image" src="https://github.com/user-attachments/assets/713c5498-6c0e-40a8-9fc3-cbf62eac861b" />
+
