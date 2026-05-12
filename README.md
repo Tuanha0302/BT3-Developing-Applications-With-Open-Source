@@ -129,3 +129,35 @@ Như vậy, sub-domain đã truy cập thành công vào wordpress:
 #### Vào mục Bài viết -> Tạo bài viết.
 
 <img width="1919" height="1041" alt="image" src="https://github.com/user-attachments/assets/fde0acf9-83bf-432d-900a-32e11f23ebb9" />
+
+### 4.2. Tạo 1 bài viết trong wordpress giới thiệu về ngành học mà em yêu thích trong trường TNUT. bài viết phải chứa hình ảnh, video, ...
+
+<img width="1916" height="1039" alt="image" src="https://github.com/user-attachments/assets/ba89b0ba-76ac-4502-ae8b-e92ea845fe7f" />
+
+<img width="1918" height="1039" alt="image" src="https://github.com/user-attachments/assets/398d3f20-c396-4589-8355-b6480056b93a" />
+
+<img width="1917" height="1038" alt="image" src="https://github.com/user-attachments/assets/a97bdd92-ae3d-4c10-b238-e19177075d1b" />
+
+### 4.3. Truy cập PhpMyAdmin kiểm tra database, ví dụ ở bảng wp_terms đã xuất hiện dữ liệu sinh ra trong quá trình tạo website.
+Ở đây, blog hay chưa phân loại là các giá trị của Chuyên mục khi tạo website để phân loại.
+
+<img width="1918" height="1040" alt="image" src="https://github.com/user-attachments/assets/e3bf8e2d-833f-4eb1-b7dc-5311099c9799" />
+
+## 5. Nhận xét
+### 5.1. Về công sức và thời gian triển khai
+- Tiết kiệm thời gian: So với việc lập trình web từ đầu (code thuần), sử dụng WordPress giúp rút ngắn 90% thời gian. Thay vì phải viết code xử lý Backend, Database, người dùng chỉ cần tập trung vào việc cài đặt và quản trị.
+- Công sức cấu hình: Nhờ có công nghệ Docker, việc cài đặt WordPress cùng hệ quản trị MariaDB trở nên rất nhàn nhã. Chỉ cần một file docker-compose.yml chuẩn, toàn bộ hệ thống sẽ được khởi tạo tự động trong vài phút mà không cần cài đặt thủ công từng dịch vụ lên hệ điều hành.
+
+### 5.2. Độ khó/dễ khi sử dụng
+- Giao diện trực quan: WordPress có giao diện quản trị (Dashboard) rất thân thiện. Việc tạo bài viết theo kiểu "kéo-thả" khối (Block Editor) giúp sinh viên dễ dàng chèn media (hình ảnh, video, âm thanh) mà không cần kiến thức về HTML/CSS.
+- Cộng đồng hỗ trợ lớn: Vì là mã nguồn mở phổ biến nhất thế giới, bất kỳ lỗi nào phát sinh (như lỗi kết nối Database hay phân quyền thư mục) đều có thể dễ dàng tìm thấy giải pháp trên internet.
+
+### 5.3. Về tiêu tốn tài nguyên máy chủ (RAM/Disk/CPU)
+- Dung lượng ổ cứng (Disk): Đây là điểm cần lưu ý nhất. Một bộ mã nguồn WordPress và MariaDB cơ bản chiếm khoảng 1GB - 2GB. Tuy nhiên, nếu lưu trữ nhiều media (video, ảnh gốc), dung lượng sẽ tăng nhanh. Sử dụng các phương pháp "nhúng" (như YouTube) là giải pháp tối ưu.
+- Bộ nhớ RAM: Một hệ thống WordPress + MariaDB chạy qua Docker tiêu tốn khoảng 400MB - 800MB RAM ở trạng thái chờ. Đây là mức tiêu thụ trung bình, phù hợp với các dòng VPS/Máy ảo cấu hình thấp.
+- CPU: WordPress chỉ thực sự tốn CPU khi có lượng truy cập lớn cùng lúc hoặc chạy quá nhiều Plugin nặng. Đối với mục đích học tập, mức chiếm dụng CPU là không đáng kể.
+
+### 5.4. Khả năng mở rộng và Public (Cloudflare Tunnel)
+- Việc kết hợp với Cloudflare Tunnel là một bước đột phá về bảo mật và tiện lợi. Nó giúp đưa website từ local lên internet mà không cần mở Port (Port Forwarding) trên Router, giúp bảo vệ máy chủ Ubuntu khỏi các cuộc tấn công trực tiếp vào IP.
+
+## Kết luận: WordPress là giải pháp "nhanh - gọn - nhẹ" cho việc tạo website chuyên nghiệp. Khi kết hợp với Docker, nó trở thành một công cụ học tập và làm việc cực kỳ mạnh mẽ cho sinh viên ngành kỹ thuật, giúp tiếp cận tư duy quản trị hệ thống hiện đại.
