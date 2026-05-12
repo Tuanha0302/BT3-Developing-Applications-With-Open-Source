@@ -108,5 +108,24 @@ tunnel:
 | Trường | Nội dung |
 | :--- | :--- |
 | subdomain | wordpress |
-| domain | nguyentrunghiieu.id.vn |
+| domain | appwebtuanha.io.vn |
 | service url | [http://wordpress:80](http://wordpress:80) |
+
+<img width="1918" height="1040" alt="image" src="https://github.com/user-attachments/assets/e9c17a70-6a1e-4113-847a-ba85cc6ba161" />
+
+<img width="1916" height="1036" alt="image" src="https://github.com/user-attachments/assets/ba324e16-9007-42a1-8bf9-df9312788271" />
+
+### Kết quả public
+Như vậy, sub-domain đã truy cập thành công vào wordpress:
+
+<img width="1918" height="1038" alt="image" src="https://github.com/user-attachments/assets/b48779d8-a0e7-4850-97c0-f9e370e29d14" />
+
+## 4. Tạo bài viết
+### 4.1. Tạo 1 bài viết trong wordpress giới thiệu về bản thân sinh viên: thông tin cá nhân, sở thích, ... bài viết có thể chứa hình ảnh, âm thanh, video, ...
+#### Truy cập url và thực hiện tạo tài khoản wordpress. Sau khi tạo xong thì login. Kết quả login:
+
+<img width="1918" height="1040" alt="image" src="https://github.com/user-attachments/assets/cfd143fc-e30c-4a80-b426-9a552cb19c91" />
+
+#### Vào mục Bài viết -> Tạo bài viết.
+
+<img width="1919" height="1041" alt="image" src="https://github.com/user-attachments/assets/fde0acf9-83bf-432d-900a-32e11f23ebb9" />
